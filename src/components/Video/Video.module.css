@@ -1,0 +1,100 @@
+.containerShadow {
+    padding: 0.5rem;
+}
+
+.container {
+    width: 22.5rem;
+    background-color: var(--colorNegro);
+    border: 2px solid var(--colorRojo);
+    border-radius: 12px;
+    position: relative;
+}
+
+.container h2 {
+    height: 2.5rem;
+    padding: 0.125rem 0.5rem 0;
+    background-color: var(--colorNegro);
+    display: flex;
+    align-items: center;
+    font-family: var(--fontTitulos);
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: absolute;
+    top: 8rem;
+}
+
+.imagen {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--colorRojo);
+}
+
+.favorito {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    cursor: pointer;
+}
+
+.cardFooter {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--colorBlanco);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.icon:hover {
+    color: var(--colorNaranja);
+}
+
+.ocultar {
+    display: none;
+}
+
+.ocultarReproducir {
+    display: none;
+}
+
+.mostrarReproducir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--colorBlanco);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.mostrarReproducir:hover {
+    color: var(--colorNaranja);
+}
+
+/* FORMATO CELULAR - Cambia las dimensiones para un mejor muestreo */
+
+@media (max-width: 575.98px) {
+    .container {
+        min-width: 18.75rem;
+    }
+
+    .container h2 {
+        top: 6rem;
+    }
+}

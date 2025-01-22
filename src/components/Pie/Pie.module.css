@@ -1,0 +1,73 @@
+.pieContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorNegro);
+}
+
+.pieLogo {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--colorRojo);
+}
+
+.pieLogo img {
+    max-width: 10.5rem;
+}
+
+.pieInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 2.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+.pieSocial {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.pieSocial a {
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.pieSocial a:hover {
+    color: var(--colorNaranja);
+}
+
+.pieTexto {
+    text-align: center;
+    font-size: 0.875rem;
+    text-wrap: balance;
+}
+
+
+/* FORMATO CELULAR / MOBILE - Levanta un poco para dar lugar al nuevo bottom-nav-bar y pierde el logo para que no sea repetitivo */
+@media (max-width: 575.98px) {
+    .pieLogo {
+        display: none;
+    }
+
+    .pieInfo {
+        padding-top: 2rem;
+        padding-bottom: 6.5rem;
+        border-top: 2px solid var(--colorGrisOscuro);
+    }
+}

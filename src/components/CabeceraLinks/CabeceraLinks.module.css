@@ -1,0 +1,42 @@
+.link {
+    box-sizing: border-box;
+    height: 2.5rem;
+    color: var(--colorBlanco);
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    border: 2px solid var(--colorBlanco);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover {
+    color: var(--colorNaranja);
+    border: 2px solid var(--colorNaranja);
+    box-shadow: 0px 0px 4px 1px var(--colorNaranjaSombra);
+}
+
+
+/* Cambia formato a solo ícono en tablet */
+@media (max-width: 991.98px) {
+    .link {
+        width: 2.5rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Cambia lugar a bottonm-nav-bar y pierde el borde */
+@media (max-width: 575.98px) {
+    .link {
+        border-radius: 0;
+        border: none;
+        padding: 0;
+    }
+
+    .link:hover {
+        border: none;
+        box-shadow: none;
+    }
+}
